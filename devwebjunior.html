@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Web Junior</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript">
+        function refresh() {
+            var t = 1000;
+            setTimeout('showDate()', t)
+        }
+        function showDate() {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if (h < 10) { h = '0' + h; }
+            if (m < 10) { m = '0' + m; }
+            if (s < 10) { s = '0' + s; }
+            var time = h + ':' + m + ':' + s
+            document.getElementById('horloge').innerHTML = time;
+            refresh();
+        }
+    </script>
+    <link rel="icon" href="assets/image/4d.gif" type="image/X-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar text-center navbar-expand-lg navbar-dark bg-none bg-lg-light">
+            <div class="mx-auto">
+                <button class="mx-auto navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mt-3">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <h1>⚪</h1>Accueil
+                            </a>
+                        </li>
+                        <div class="d-lg-flex d-none" style="height: 100px;">
+                            <div class="vr"></div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav w-100 d-flex justify-content-around me-auto mb-2 mb-lg-0">
+                                <li class="nav-item mt-3">
+                                    <a class="nav-link active" aria-current="page" href="mesprojetsperso.html">
+                                        <h1>💡</h1>Mes Projets Personnels
+                                    </a>
+                                </li>
+                                <div class="d-lg-flex d-none" style="height: 100px;">
+                                    <div class="vr"></div>
+                                </div>
+                               
+                                <div class="d-lg-flex d-none" style="height: 100px;">
+                                    <div class="vr"></div>
+                                </div>
+                                <li class="nav-item mt-3">
+                                    <a class="nav-link active" href="agentmagasinier.html">
+                                        <h1>📦</h1>Agent Magasinier
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+        </nav>
+        <hr>
+
+        <body onload=showDate();>
+            <span id='horloge' style="color:white;font-size:30px;" class="heure"></span>
+            <h1 class="text-center mb-2">DÉVELOPPEUR WEB JUNIOR</h1>
+            <hr>
+    </header>
+    <br>
+    <main>
+        <section>
+            <div class="tourne">
+                <img src="assets/image/logo.png" width="200px" height="200px" alt="">
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="card text-center mx-auto mt-5 col-12">
+                    <div class="card-body">
+                        <h2>MES FORMATIONS PROFESSIONNELLES</h2>
+                        <div class="table-responsive container mt-3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Années</th>
+                                        <th>Formations</th>
+                                        <th>Etablissements</th>
+                                        <th>Sites Web</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Avr 2022 - Jan 2023</td>
+                                        <td>Concepteur Développeur d'applications</td>
+                                        <td>Ecole Ri7 - Aubagne</td>
+                                        <td><a href="https://ri7.fr/">École Ri7</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sept 2021</td>
+                                        <td>Développeur Mobile</td>
+                                        <td>Apple Foundation Program - Marseille</td>
+                                        <td><a href="https://simplon.co/formation/foundation/24">Simplon.co</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jan 2021 - Août 2021</td>
+                                        <td>Développeur Web (Télétravail)</td>
+                                        <td>Association Résurgences - Marseille</td>
+                                        <td><a href="https://www.resurgences.asso.fr/">Association Résurgences</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="container wrap col-lg-12">
+            <div class="row">
+                <div class="card text-center mx-auto mt-5">
+                    <div id="expro" class="card-body">
+                        <h2>MES EXPÉRIENCES PROFESSIONNELLES</h2>
+                        <div class=" table-responsive container mt-3">
+                            <table class="table table-striped mx-auto">
+                                <thead>
+                                    <tr>
+                                        <th>Années</th>
+                                        <th>Métiers</th>
+                                        <th>Domaines</th>
+                                        <th>Entreprises</th>
+                                        <th>Sites Web</th>
+                                    </tr>
+                                </thead>
+                               
+                                    <tr>
+                                        <td>Jan 2021 - Août 2021</td>
+                                        <td>Salarié Développeur Web Junior (Télétravail)</td>
+                                        <td>Développement Web</td>
+                                        <td>Association Résurgences - Marseille</td>
+                            
+                                        <td><a href="https://www.resurgences.asso.fr/">Association Résurgences</a>
+                                        </td>
+                                    </tr>
+                                    <thead>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+
+
+
+
+        <section class="container">
+            <div class="row">
+                <div class="card text-center mx-auto mt-5 col-lg-12">
+                    <div class="card-body">
+                        <h2>MES PROJETS</h2>
+                        <hr>
+                        <p>Création de CV en utilisant HTML, CSS, Média Query, Bootstrap et JavaScript.</p>
+                        <p>Création d'une application de voyage <b>"TRIP CREW"</b> qui permet la réservation en
+                            ligne
+                            avec l'équipe d'Apple Foundation Program en utilisant le
+                            logiciel Xcode: Swift et Keynote pour le Maquettiste de l'application mobile.</p>
+                        <hr>
+                        <p><b>Télécharger L'Application :</b></p>
+                        <a href="#" class="btn btn-primary">TRIP CREW</a>
+                        <hr>
+                        <div>
+                            <img src="assets/image/tripcrew.png" width="350px" height="350px" alt="">
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+        </section>
+
+        <section class="table-responsive container">
+            <div class="row">
+                <div class="card text-center mx-auto mt-5 col-lg-12">
+                    <div class="card-body">
+                        <h2>MES COMPÉTENCES PROFESSIONNELLES</h2>
+                        <div class=" container mt-3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Logiciels</th>
+                                        <th>Mes Utilisations Pour :</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>WordPress</td>
+                                        <td>Création de sites web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Figma</td>
+                                        <td>Maquettiste de sites web, mobile ou tablette</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visual Studio Code</td>
+                                        <td>Codage</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xcode</td>
+                                        <td>Codage pour Apple</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Keynote</td>
+                                        <td>Maquettiste d'applications mobile pour Apple</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DBeaver</td>
+                                        <td>Les bases de données</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atom</td>
+                                        <td>Codage</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <section class="table-responsive container">
+                                <div class="row">
+                                    <div class="container mt-3">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Langages de programmation</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>HTML</td>
+                                                    <td>CSS</td>
+                                                    <td>Média Query</td>
+                                                    <td>Booststrap</td>
+                                                    <td>Type Script</td>
+                                                    <td>JavaScript</td>
+                                                    <td>PHP</td>
+                                                    <td>MySQL</td>
+                                                    <td>Swift : Apple</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </section>
+
+
+                            <section class="table-responsive container">
+                                <div class="row">
+                                    <div class="container mt-3">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Bureautiques</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Microsoft Office</th>
+                                                    <td>Word</td>
+                                                    <td>Excel</td>
+                                                    <td>PowerPoint</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Apple Office</th>
+                                                    <td>Pages</td>
+                                                    <td>Numbers</td>
+                                                    <td>Keynote</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Autres</th>
+                                                    <th>Libre Office</th>
+                                                    <th>Open Office</th>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer class="text-center">
+        <hr>
+        <section class="fleche">
+            <div id="scrollUp">
+                <a href="#top">↑UP↑</a>
+            </div>
+        </section>
+        © 2022 Copyright : Sébastien PALACIOS
+        <p id='date'></p>
+        <script>
+            let date1 = new Date();
+            let dateLocale = date1.toLocaleString('fr-FR', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+            });
+            document.getElementById('date').innerHTML = '' + dateLocale;
+        </script>
+        <p id="demo"></p>
+        <script>
+            setInterval(myTimer, 1000);
+            function myTimer() {
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+        <div class="tourne2">
+            <img src="assets/image/logo.png" width="100px" height="100px" alt="">
+        </div>
+        <hr>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

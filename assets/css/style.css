@@ -1,0 +1,161 @@
+body {
+    background: linear-gradient(#0f056b, #245e97, #048b9a, #6d071a);
+    height: 100%;
+    border: 15px solid #6d071a;
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    background-color: #6d071a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 122222222;
+    border-bottom: 2px solid white;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.text-nav {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.text-nav:hover {
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.margin-right {
+    margin-right: 30px;
+}
+
+
+
+
+
+footer {
+    color: #ffd700;
+    font-family: calibri;
+}
+
+h1 {
+    color: white;
+    font-family: calibri;
+}
+
+h2 {
+    color: blue;
+    font-family: calibri;
+}
+
+h4 {
+    color: red;
+    font-family: calibri;
+}
+
+p {
+    font-family: calibri;
+}
+
+hr {
+    color: #048b9a;
+}
+
+th,td {
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img {
+    animation: test 6s linear infinite;
+
+    border-radius: 50%;
+
+}
+
+.icon{
+    animation: test 6s linear infinite;
+
+}
+
+
+img.tournepas{
+    animation: none;
+
+}
+
+
+.tourne {
+    display: flex;
+    justify-content: center;
+}
+
+.tourne2 {
+    display: flex;
+    justify-content: center;
+}
+
+.fleche {
+    font-family: calibri;
+    font-size: 300%;
+    text-align: center;
+}
+
+
+@keyframes test {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+
+}
+
+
+#expro {
+    box-sizing: none !important;
+}
+
+.card-body {
+
+    border-radius: 50%;
+
+
+}
+
+.heure {
+
+    border: 20px solid transparent;
+}
+
+
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}

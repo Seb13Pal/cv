@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Des Stocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript">
+        function refresh() {
+            var t = 1000;
+            setTimeout('showDate()', t)
+        }
+        function showDate() {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if (h < 10) { h = '0' + h; }
+            if (m < 10) { m = '0' + m; }
+            if (s < 10) { s = '0' + s; }
+            var time = h + ':' + m + ':' + s
+            document.getElementById('horloge').innerHTML = time;
+            refresh();
+        }
+    </script>
+    <link rel="icon" href="assets/image/4d.gif" type="image/X-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar text-center navbar-expand-lg navbar-dark bg-none bg-lg-light">
+            <div class="mx-auto">
+                <button class="mx-auto navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mt-3">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <h1>⚪</h1>Accueil
+                            </a>
+                        </li>
+                        <div class="d-lg-flex d-none" style="height: 100px;">
+                            <div class="vr"></div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav w-100 d-flex justify-content-around me-auto mb-2 mb-lg-0">
+                                <li class="nav-item mt-3">
+                                    <a class="nav-link active" aria-current="page" href="mesprojetsperso.html">
+                                        <h1>💡</h1>Mes Projets Personnels
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                </div>
+        </nav>
+        <hr>
+
+        <body onload=showDate();>
+            <span id='horloge' style="color:white;font-size:30px;" class="heure"></span>
+            <h1 class="text-center mb-2">GESTION DES STOCKS</h1>
+            <hr>
+    </header>
+    <main>
+        <br>
+       <br>
+            <section>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h1 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <p><b>Fiche de stock : Le suivi d'un produit : </b></p>
+                            </button>
+                        </h1>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class=" table-responsive container mt-3">
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Allée</th>
+                                                <th>Emplacement</th>
+                                                <th>Référence</th>
+                                                <th>Désignation</th>
+                                                <th>Prix U HT</th>
+                                                <th>TVA 20 %</th>
+                                                <th>Prix U TTC</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>A</td>
+                                                <td>111</td>
+                                                <td>A1191</td>
+                                                <td>Lorem Ipsum</td>
+                                                <td>11 €</td>
+                                                <td>2,20 €</td>
+                                                <td>13,20 €</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Stok Initial</th>
+                                                <th>Stock Final</th>
+                                                <th>Stock Final UHT</th>
+                                                <th>Stock Maximum</th>
+                                                <th>Stock Moyen</th>
+                                                <th>Stock Minimum</th>
+                                                <th>Stock Critique</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th style="color:blue">150</th>
+                                                <th style="color:blue">40</th>
+                                                <th style="color:blue">440 €</th>
+                                                <td>240</td>
+                                                <td>120</td>
+                                                <td>80</td>
+                                                <td>40</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Stock I</th>
+                                                <th>Entrées</th>
+                                                <th>Sorties</th>
+                                                <th>Stock F</th>
+                                                <th>Stock F UHT</th>
+                                                <th>Dates</th>
+                                                <th>Commentaires : </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <th style="color:blue">150</th>
+                                                <td>50</td>
+                                                <td>60</td>
+                                                <td>140</td>
+                                                <td>1540 €</td>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max="">
+                                                </td>
+                                                <td><textarea style="color:blue" class="form-control"
+                                                        id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F est supérieur aux Stock Moyen</textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>140</td>
+                                                <td>70</td>
+                                                <td>90</td>
+                                                <td>120</td>
+                                                <td>1320 €</td>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max=""></td>
+                                                <td><textarea style="color:green" class="form-control"
+                                                        id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F est Stock Moyen</textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td>120</td>
+                                                <td>0</td>
+                                                <td>40</td>
+                                                <td>80</td>
+                                                <td>880 €</td>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max=""></td>
+                                                <td><textarea style="color:orange" class="form-control"
+                                                        id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F est Stock Minimum</textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td>80</td>
+                                                <td>200</td>
+                                                <td>60</td>
+                                                <td>220</td>
+                                                <td>2420 €</td>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max=""></td>
+                                                <td><textarea style="color:blue" class="form-control"
+                                                        id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F est supérieur aux Stock Moyen</textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>220</td>
+                                                <td>80</td>
+                                                <td>40</td>
+                                                <td>260</td>
+                                                <td>2860 €</td>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max=""></td>
+                                                <td><textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F est supérieur aux Stock Maximum</textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>260</td>
+                                                <td>40</td>
+                                                <td>120</td>
+                                                <td>180</td>
+                                                <td>1980 €</td>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max=""></td>
+                                                <td><textarea style="color: blue" class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F est supérieur aux Stock Moyen</textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td>180</td>
+                                                <td>0</td>
+                                                <td>140</td>
+                                                <th style="color:blue">40</th>
+                                                <th style="color:blue">440 €</th>
+                                                <td><input type="date" id="start" name="trip-start" value="" min=""
+                                                        max=""></td>
+                                                <td><textarea style="color:red" class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="1">Le Stock F Attention Stock Critique</textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <br>
+    </main>
+    <footer class="text-center">
+        <hr>
+        <section class="fleche">
+            <div id="scrollUp">
+                <a href="#top">↑UP↑</a>
+            </div>
+        </section>
+
+
+        © 2022 Copyright : Sébastien PALACIOS
+        <p id='date'></p>
+        <script>
+            let date1 = new Date();
+            let dateLocale = date1.toLocaleString('fr-FR', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+            });
+            document.getElementById('date').innerHTML = '' + dateLocale;
+        </script>
+        <p id="demo"></p>
+        <script>
+            setInterval(myTimer, 1000);
+            function myTimer() {
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+        <hr>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
